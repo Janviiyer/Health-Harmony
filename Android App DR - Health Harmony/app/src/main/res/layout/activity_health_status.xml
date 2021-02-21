@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health_status">
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+        <RelativeLayout
+            android:background="@drawable/gradientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/backop"
+                android:layout_width="@dimen/v32dp"
+                android:layout_height="@dimen/v32dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginLeft="@dimen/v20dp"
+                android:layout_marginTop="@dimen/v20dp"
+                android:onClick="back_aero"/>
+
+
+            <TextView
+                android:id="@+id/userskivalue"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Updates"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="45dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relative">
+
+    <TextView
+        android:id="@+id/button_healthupdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Variation in Health"
+        android:layout_marginTop="@dimen/v20dp"
+        android:textSize="@dimen/v20dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/v400dp"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true"
+        android:numColumns="2"
+        android:layout_below="@id/button_healthupdates"
+        android:layout_marginTop="@dimen/v10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        android:focusable="true"
+        android:clickable="true"/>
+
+
+    <View
+        android:id="@+id/vie"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/grid"
+        android:layout_marginTop="@dimen/v10dp"
+        android:layout_marginLeft="8dp"
+        android:background="#7a8b8b8b"/>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

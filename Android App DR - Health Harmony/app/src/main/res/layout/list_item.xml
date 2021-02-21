@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:background="@drawable/drama"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@drawable/drama"
+            >
+
+            <TextView
+                android:id="@+id/glu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Glucose"
+                android:textColor="#5E5E5E"
+                android:textSize="18dp" />
+
+
+
+            <TextView
+                android:id="@+id/glose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:text="value"/>
+
+
+            <View
+                android:id="@+id/myview"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/glu"
+                android:layout_marginTop="@dimen/v10dp"
+                android:layout_marginLeft="@dimen/v10dp"
+                android:layout_toRightOf="@id/glose"
+                android:background="#9C9C9C"/>
+
+
+            <ImageView
+                android:id="@+id/image_icons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/glucose_img"
+                android:layout_toRightOf="@id/myview"
+                android:layout_below="@id/glu"
+                android:layout_marginLeft="@dimen/v5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

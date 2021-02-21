@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stress_level">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="405dp">
+        <RelativeLayout
+            android:background="@drawable/gradientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/backop"
+                android:layout_width="@dimen/v32dp"
+                android:layout_height="@dimen/v32dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginLeft="@dimen/v20dp"
+                android:layout_marginTop="@dimen/v20dp"
+                android:onClick="back_aero"/>
+
+
+            <TextView
+                android:id="@+id/users"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stress Level"
+                android:textColor="#fff"
+
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="45dp"/>
+
+                    </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+        android:id="@+id/button_1"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:background="@drawable/shape_sign_in_button"
+        android:text="Fun Games Online"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/relative"
+        android:onClick="open_games"
+        android:layout_centerHorizontal="true"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:background="@drawable/shape_sign_in_button"
+        android:text="Motivating Songs"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+
+        android:gravity="center_horizontal"
+        android:layout_below="@id/button_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v60dp"
+        android:onClick="open_songs"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:background="@drawable/shape_sign_in_button"
+        android:text="Stress Reduce Yoga"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/button_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/v60dp"
+        android:onClick="open_yoga"
+        tools:ignore="NotSibling" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
